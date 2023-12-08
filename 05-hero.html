@@ -34,7 +34,7 @@ GREY: #343A40
 
 body {
   font-family: 'Rubik', sans-serif;
-  color: #343A40;
+  
   line-height: 1;
 }
 
@@ -44,23 +44,55 @@ body {
   
 }
 
+
+
 header {
-  background-color: #e67d226c;
+  
   height: 100vh;
+
+  position: relative;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(hero.jpg);
+  background-size: cover;
+
+  color: #fff;
+
 }
 
 nav {
   font-size: 20px;
   font-weight: 700;
+
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
 
-  background-color: aquamarine;
+  
+}
+
+.header-container {
+ width: 1200px;
+ position: absolute;
+
+ /* in relation to parent size */
+ left: 50%;
+ top: 50%;
+ 
+ /* in relation to element size */
+ transform: translate(-50%, -50%);
+
+ 
+}
+
+.header-container-inner {
+  width: 50%;
+ 
 }
 
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 
 p {
@@ -88,7 +120,7 @@ h2 {
 
 section {
   padding: 96px 0;
-  background-color: antiquewhite;
+  
 }
 
 .btn:link,
@@ -97,7 +129,7 @@ section {
   </style>
 </head>
 
-
+<!-- ======= BODY ================ -->
 <body>
 
   <header>
@@ -107,11 +139,13 @@ section {
       <div>NAVIGATION</div>
     </nav>
 
-    <div class="container">
+    <div class="header-container">
+      <div class="header-container-inner">
       <h1>A Healthy meal delivered to your door, every day.</h1>
       <p>The smart 365-day/year food subscription that will help you eat healthy again. Tailored to your personal taste and nutritional needs.</p>
 
 <a href="#" class="btn">Start eating well</a>
+</div>
     </div>
 
   </header>
