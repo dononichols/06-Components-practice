@@ -36,12 +36,71 @@ body {
   font-family: 'Inter', sans-serif;
   color: #343A40;
   line-height: 1;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
 }
 
-.pagination {}
-.btn {}
-.btn-icon {}
-.dots {}
+.pagination {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.btn {
+border: 1px solid #087F5B;
+height: 48px;
+width: 48px;
+border-radius: 50%;
+background: none;
+cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #087F5B;
+  
+}
+
+.btn:hover .btn-icon {
+  stroke: #fff;
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087F5B ;
+}
+
+.page-link:link,
+.page-link:visited {
+font-size: 18px;
+color: #343A40;
+text-decoration: none;
+
+height: 36px;
+width: 36px;
+border-radius: 50%;
+
+display: flex;
+align-items: center;
+justify-items: center;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link--current {
+background-color: #087F5B;
+color: #fff;
+}
+
+.dots {
+color: #868e96;
+}
+
+.page-link--current {
+
+}
 
 
 
@@ -62,7 +121,7 @@ body {
   <!-- Pages -->
 <a href="#" class="page-link">1</a>
 <a href="#" class="page-link">2</a>
-<a href="#" class="page-link">3</a>
+<a href="#" class="page-link page-link--current">3</a>
 <a href="#" class="page-link">4</a>
 <a href="#" class="page-link">5</a>
 <a href="#" class="page-link">6</a>
@@ -71,7 +130,7 @@ body {
 
   <!-- Button -->
   <button class="btn">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
       <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
     </svg>
     
